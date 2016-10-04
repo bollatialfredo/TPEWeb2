@@ -18,7 +18,6 @@ $( document ).ready(function() {
   }
   function eliminarFila(_id){
     $('#'+_id).click(function(){
-      $(this).parent().parent().remove();
       eliminarInfor(_id);
     })
   }
@@ -56,7 +55,7 @@ $( document ).ready(function() {
   }
   function comoLlegar(){
     event.preventDefault();
-    var a = $('#btnComoLLegar').attr('href');
+    var a = "template/comoLlegar.tpl";
     partialRender(a);
   }
 
